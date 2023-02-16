@@ -1,0 +1,20 @@
+Read Me:
+In this code, I am defining a React component called SearchableList that takes a prop called items. Items is an 
+array composed of strings representing a list of items to search through.
+
+The component uses the useState hook to declare a state variable called searchTerm.
+At first, searchTerm is set to an empty string. Eventually, this variable will be assigned to the user's search term. 
+
+Next I defined a function called handleSearchChange that is called whenever the user types something into the search input. 
+This duty of this function is to update the searchTerm state variable to whatever the user input ends up being. 
+
+The component then filters the items array based on whether each item includes the current search term (ignoring case). 
+This filtered list is stored in the filteredItems variable.
+
+Finally, the component displays an input field and a list of items that match the current search term. 
+The input field is bound to the searchTerm state variable, so whenever the user types something into the input,
+the handleSearchChange function is called and the list is filtered accordingly.
+
+This code uses a combination of JavaScript and React to implement a simple search feature that updates in real-time as the user types. 
+By using React's state and rendering capabilities, the component automatically updates the list of items whenever the search term changes, 
+without needing to manually update the DOM.
